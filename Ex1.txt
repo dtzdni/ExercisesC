@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <locale>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	int status, novostatus;
+	cout << "Você deseja fazer o quê com a lâmpada? [0]Apagar [1] Acender" << endl;
+	cinn >> novostatus;
+
+	status=novostatus;
+
+	if (status==0) {cout <<"Lâmpada foi apagada" << endl;}
+	else { cout << "Lâmpada foi acesa!" << endl; }
+	
+	system ("pause");
+
+	return 0;
